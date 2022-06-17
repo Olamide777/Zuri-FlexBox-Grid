@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: rgb(20, 21, 26);
+            margin: auto;
+        }
+        nav{
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+}
+a{
+    background:rgb(22, 150, 235);
+    text-align:center;
+    padding:20px;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+        .container{ 
+            width: 50%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-rows:repeat(4, 16rem);
+            gap: 16px;
+            
+        }
+        .row-one{
+            display: grid;
+            grid-template-columns: 2fr 1fr ;
+            gap: 1rem;
+        }
+        .row-two{
+            display: grid;
+            grid-template-columns: 1.5fr 2fr ;
+            gap: 1rem;
+        }
+        .col{
+            display: grid;
+            grid-template-rows: .75fr 1fr;
+            gap: 1rem;
+        }
+        .one{
+            background: red;
+        }
+        .two{
+            background: rgb(250, 206, 10);
+        }
+        .three{
+            background:  rgb(76, 235, 76);
+        }
+        .four{
+            background: rgb(69, 176, 226);
+        }
+        .five{
+            background:  rgb(69, 176, 226);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Flex-Box</a>
+    </nav>
+    <div class="container">
+        <div class="row-one">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div class="row-two">
+            <div class="three"></div>
+            <div class="col">
+                <div class="four"></div>
+                <div class="five"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
